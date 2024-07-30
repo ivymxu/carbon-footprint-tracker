@@ -7,3 +7,7 @@ app = Flask(__name__)
 
 # Load the emissions data
 data = pd.read_csv('../data/food_emissions.csv')
+
+# Endpoint to get emissions data
+@app.route('/get_emissions', methods=['POST'])
+
