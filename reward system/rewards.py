@@ -12,3 +12,9 @@ class RewardsSystem:
 
         return self.rewards
 
+# List of fun facts to award students 
+fun_fact = []
+
+def get_fact():
+    import random
+    return random.choice(fun_fact)
