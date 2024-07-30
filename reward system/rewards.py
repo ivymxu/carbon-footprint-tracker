@@ -18,3 +18,16 @@ fun_fact = []
 def get_fact():
     import random
     return random.choice(fun_fact)
+
+# Request user input to show example usage
+
+reward_system = RewardSystem()
+food item = input("Food item: ") 
+    # if statements to determine food item emissions
+emissions = get_emissions(food_item) 
+reward_system.calculate_points(emissions)
+reward = reward_system.get_reward()
+fact = get_random_fact()
+
+print(f"Reward: {reward}")
+print(f"Fun Fact: {fact}")
