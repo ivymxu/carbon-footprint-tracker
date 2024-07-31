@@ -1,9 +1,15 @@
 class RewardsSystem:
     def __init__(self):
-        self.rewards = 0
+        self.points = 0
     
     def calculate_points(self, emissions):
-        # if statements for better food choices
+        if emissions < 5:
+            self.points += 10
+        elif emissions < 10:   
+            self.points += 5
+        else: 
+            self.points += 1
+        return self.points
 
         return self.rewards
 
@@ -22,7 +28,7 @@ def get_fact():
 # Request user input to show example usage
 
 reward_system = RewardSystem()
-food item = input("Food item: ") 
+food_item = input("Food item: ") 
     # if statements to determine food item emissions
 emissions = get_emissions(food_item) 
 reward_system.calculate_points(emissions)
