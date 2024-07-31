@@ -11,12 +11,14 @@ class RewardsSystem:
             self.points += 1
         return self.points
 
-        return self.rewards
-
     def get_reward(self):
-        # determine type of reward based on points
-
-        return self.rewards
+        # Determine type of reward based on points
+        if self.points >= 1000:
+            return 'Free Meal Coupon'
+        elif self.points >= 500:
+            return '50% off store purchase'
+        else:
+            return 'Not enough points yet!'
 
 # List of fun facts to award students 
 fun_fact = []
