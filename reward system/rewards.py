@@ -30,8 +30,16 @@ def get_fact():
 # Request user input to show example usage
 
 reward_system = RewardSystem()
-food_item = input("Food item: ") 
-    # if statements to determine food item emissions
+food_item = input("Food category: ") 
+    if food_item not in data['food_item']:
+        print("Food item not found")
+    elif food_item == "Vegetable":
+        emissions = 2
+    elif food_item == "Meat":
+        emissions = 10
+    else:
+        emissions = 0
+        
 emissions = get_emissions(food_item) 
 reward_system.calculate_points(emissions)
 reward = reward_system.get_reward()
