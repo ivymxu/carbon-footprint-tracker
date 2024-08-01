@@ -33,17 +33,23 @@ reward_system = RewardSystem()
 food_item = input("Food category: ") 
     
 emissions = 0
+
 while food_item != "Vegetable" and food_item != "Meat" and food_item != "Fruit":
-    elif food_item == "Vegetable":
+    if food_item == "Vegetable":
         emissions += 2
     elif food_item == "Meat":
         emissions += 10
+    elif food_item == "Fruit":
+        emissions += 4
     else:
         emissions += 0
+
+if food_item not in data['food_item']:
+    print("Food item not found")
         
 reward_system.calculate_points(emissions)
 reward = reward_system.get_reward()
-fact = get_random_fact()
+fact = get_fact()
 
 print(f"Reward: {reward}")
 print(f"Fun Fact: {fact}")
