@@ -31,16 +31,16 @@ def get_fact():
 
 reward_system = RewardSystem()
 food_item = input("Food category: ") 
-    if food_item not in data['food_item']:
-        print("Food item not found")
+    
+emissions = 0
+while food_item != "Vegetable" and food_item != "Meat" and food_item != "Fruit":
     elif food_item == "Vegetable":
-        emissions = 2
+        emissions += 2
     elif food_item == "Meat":
-        emissions = 10
+        emissions += 10
     else:
-        emissions = 0
+        emissions += 0
         
-emissions = get_emissions(food_item) 
 reward_system.calculate_points(emissions)
 reward = reward_system.get_reward()
 fact = get_random_fact()
