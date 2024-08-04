@@ -29,7 +29,7 @@ def get_fact():
 
 # Request user input to show example usage
 
-reward_system = RewardSystem()
+reward_system = RewardsSystem()
 food_item = input("Food category: ") 
     
 emissions = 0
