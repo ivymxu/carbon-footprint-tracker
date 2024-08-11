@@ -7,4 +7,4 @@ An interactive tool that focuses on reducing emissions due to food consumption a
 - Incentivizes better food decisions with a reward system and educational fun facts.
 
 # Acknowledgements
-This project was developed as part of a sustainability focused case competition held during the F23 MSCI 100 couse at the University of Waterloo. 
+This project was developed as part of a sustainability focused case competition held during the F23 MSCI 100 course at the University of Waterloo. 
